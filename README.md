@@ -4,9 +4,12 @@ Specific details of each service (How to run the program and expected output for
 input) are outlined in the respective file. 
 
 #### resources_and_libraries
--> contains the external resources required to run several programs. Please note that this 
-directory must be located in the home directory if you so choose to run these repository 
-programs.
+-> contains the external resources required to run several programs. These external resources
+were put in .gitignore for the sake of following best practice. As such, the database many 
+programs in this repository use was the only resource stored in this folder. Apache Tomcat 
+Version 9.0.8 and Apache Derby 10.14.2.0 were downloaded and used for these repo programs.
+Please note that this directory must be located in the home directory if you so choose to 
+run these repository programs (due to the nature of the programs hard-coded directory access).
 
 #### TCP-Programs Information
 -> This directory contains services implemented in Java over TCP. TCP is a part of the protocol
