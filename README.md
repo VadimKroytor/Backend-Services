@@ -31,6 +31,9 @@ framework. These programs are majorly the Node and ExpressJS counterparts of the
 Programs. 
 
 #### Appendix
+-> Node v14.18.3 and npm v8.3.0 were used for these programs.
+
+
 Appended below, you can find the tables scemas (from the database used) for which the programs utilized. 
 For example, Auth.java in TCP-Programs and FAuth.java in Tomcat-Apache-Programs use the Category table 
 for their functionality. Likewise, the Node-And-ExpressJS program uses the Category table for its 
