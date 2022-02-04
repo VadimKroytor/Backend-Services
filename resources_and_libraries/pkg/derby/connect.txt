@@ -1,2 +1,0 @@
-connect 'jdbc:derby://localhost:64413/EECS';
-

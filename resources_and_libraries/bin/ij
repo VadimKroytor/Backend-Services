@@ -1,6 +1,0 @@
-#!/bin/sh
-###############################
-# Written by Prof. H. Roumani #
-# in Fall 2018 to test Derby. #
-###############################
-java org.apache.derby.tools.ij
