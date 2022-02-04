@@ -31,10 +31,11 @@ framework. These programs are majorly the Node and ExpressJS counterparts of the
 Programs. 
 
 #### Appendix
-Appended below, you can find the tables used for the programs in this repository. For example, Auth.java
-in TCP-Programs and FAuth.java in Tomcat-Apache-Programs use the Category table for their functionality.
-Likewise, the Node-And-ExpressJS program uses the Category table for its functionality. These tables
-are a part of the Models_R_US.db database found in 'resources_and_libraries/pkg/sqlite/Models_R_US.db'.
+Appended below, you can find the tables scemas (from the database used) for which the programs utilized. 
+For example, Auth.java in TCP-Programs and FAuth.java in Tomcat-Apache-Programs use the Category table 
+for their functionality. Likewise, the Node-And-ExpressJS program uses the Category table for its 
+functionality. These tables are a part of the Models_R_US.db database found in 
+'resources_and_libraries/pkg/sqlite/Models_R_US.db'.
 
 
 CREATE TABLE IF NOT EXISTS 'Category' (
