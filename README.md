@@ -1,9 +1,9 @@
 # Backend-Services
 
-Specific details of each service (How to run the program and expected output for particular
+-> Specific details of each service (How to run the program and expected output for particular
 input) are outlined in the respective file. 
 
-#### resources_and_libraries
+#### resources_and_libraries directory information
 -> contains the external resources required to run several programs. These external resources
 were put in .gitignore for the sake of following best practice. As such, the database many 
 programs in this repository use was the only resource stored in this folder. Apache Tomcat 
@@ -59,3 +59,6 @@ CREATE TABLE Tax (
 'GST' double not null
 );
 
+
+-> The following github repo was used as a reference to implement all of these services. 
+https://github.com/EECS4413-2021F
