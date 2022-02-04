@@ -1,0 +1,14 @@
+#!/bin/sh
+##################################### 
+# stop tomcat - Prof Roumani - F 2019
+#####################################
+HOST=`hostname`
+if [ "$HOST" = "red" -o "$HOST" = "indigo" ]; then
+   echo "please login to a workstation"
+   exit 1
+fi
+TOMCAT_DIR=$HOME/4413/pkg/tomcat
+export CATALINA_HOME=$TOMCAT_DIR
+export JAVA_HOME=/cs/local/packages/jdk
+$TOMCAT_DIR/bin/shutdown.sh
+

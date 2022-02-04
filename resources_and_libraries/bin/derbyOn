@@ -1,0 +1,12 @@
+#!/bin/sh
+##################################### 
+# start derby - Prof Roumani - F 2019
+#####################################
+DERBY_DIR=$HOME/4413/pkg/derby
+WHOAMI=`whoami`
+HOST=`hostname`
+if [ "$HOST" = "red" -o "$HOST" = "indigo" ]; then
+   echo "please login to a workstation"
+   exit 1
+fi
+$DERBY_DIR/bin/startNetworkServer &
