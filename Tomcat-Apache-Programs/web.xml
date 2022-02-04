@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+version="4.0">
+  <display-name>B</display-name>
+
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+
+ 
+<servlet>
+
+    <servlet-name> FAuth</servlet-name>
+    <servlet-class>services.FAuth</servlet-class>
+    <init-param>
+        <param-name>serviceAddress</param-name>
+        <param-value>192.168.0.15</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>servicePort</param-name>
+        <param-value>45825</param-value>
+    </init-param>
+    
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>FAuth</servlet-name>
+	<url-pattern>/FAuth</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+
+    <servlet-name> GeoWeb</servlet-name>
+    <servlet-class>services.GeoWeb</servlet-class>
+    <init-param>
+        <param-name>serviceAddress</param-name>
+        <param-value>192.168.0.11</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>servicePort</param-name>
+        <param-value>42693</param-value>
+    </init-param>
+    
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>GeoWeb</servlet-name>
+	<url-pattern>/GeoWeb</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+
+    <servlet-name>Loc</servlet-name>
+    <servlet-class>services.Loc</servlet-class>
+    <init-param>
+        <param-name>MapQuestKey</param-name>
+        <param-value>eq4cXPFbfIRteZlr2dvAOaCnSfT29xmR</param-value>
+    </init-param>
+    
+    
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Loc</servlet-name>
+	<url-pattern>/Loc</url-pattern>
+	<url-pattern>/loc</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+
+    <servlet-name>Drone</servlet-name>
+    <servlet-class>services.Drone</servlet-class>
+    <init-param>
+        <param-name>MapQuestKey</param-name>
+        <param-value>eq4cXPFbfIRteZlr2dvAOaCnSfT29xmR</param-value>
+    </init-param>
+
+    <init-param>
+        <param-name>geoAddress</param-name>
+        <param-value>192.168.0.17</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>geoPort</param-name>
+        <param-value>37013</param-value>
+    </init-param>
+    
+    
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Drone</servlet-name>
+	<url-pattern>/Drone</url-pattern>
+	<url-pattern>/drone</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+
+    <servlet-name>OAuth</servlet-name>
+    <servlet-class>services.OAuth</servlet-class>
+
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>OAuth</servlet-name>
+	<url-pattern>/OAuth</url-pattern>
+</servlet-mapping>
+
+</web-app>
+
