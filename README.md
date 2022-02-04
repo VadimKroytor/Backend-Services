@@ -21,10 +21,9 @@ programs illustrate the significance of TCP connections in the protocol stack la
 -> This directory contains services implemented in Java using HTTP and TCP. Session Management,
 Open authentication, server-client HTTP connections, and fetching information from a database are
 all implemented. Please note that Tomcat Apache v9.0 is used to act as a HTTP web server environment 
-in which Java code is allowed to be run.
--> Please note that web.xml is used to map the ports and InetAddress of the respective programs. web.xml
-is used instead of manually changing the individual network addresses on every designated program for the
-sake of efficiency and organization. 
+in which Java code is allowed to be run. Also, please note that web.xml is used to map the ports and 
+InetAddress of the respective programs. web.xml is used instead of manually changing the individual 
+network addresses on every designated program for the sake of efficiency and organization. 
 
 #### Node-And-ExpressJS-Programs Information
 -> This directory contains services implemented in the NodeJS environment using the ExpressJS
