@@ -1,5 +1,17 @@
 /*
 ---------GEONODE EXAMPLE----------------
+receives two URL-encoded parameters lat and lng containing the
+GPS coordinates of a place on Earth. If this is the first
+time this client has made such a request then the return would
+be the text/plain payload “RECEIVED”. If not, then the return
+would be the text/plain payload:
+The distance from (lat1, lng1) to (lat2, lng2) is: XXX km
+where XXX is the geodesic distance between the previous place 
+(lat1 and lng1, sent in the last request) and the current one 
+(lat2 and lng2, sent in this request). This can continue (to a
+3rd, 4th, … places) as long as the requests are made in the same 
+session.
+
 1. Run Geo.java or Geo.js on host: "localhost" and port: 4413
 
 2. Run GeoNode.js:
@@ -37,6 +49,13 @@ Output:
 
 /*
 -----------CATALOG EXAMPLE--------------
+This service receives one URL parameter id containing an integer 
+and returns the id and name of the row corresponding to that id 
+in the Category table of the Models_R_US.db database (which resides 
+in ~/resources_and_libraries/pkg/sqlite). The response is 
+mimetyped as application/json in the response’s content type. If the 
+id parameter is missing then the response is an array of json
+objects for all rows in the table.
 
 1. Run Catalog.js
   > node Catalog.js
@@ -76,6 +95,13 @@ Output:
 
 /*
 ---------------EXAMPLE--------------------
+This service receives two URL parameters from and to containing the 
+start and end addresses of a trip. It returns the optimal distance (in km) 
+and time (in minutes) between them given the current traffic conditions. 
+This information is received by sending a back-end request to the MapQuest 
+Directions API (http://www.mapquestapi.com/directions/v2/route?) with specific
+parameters. 
+
 1. Run Trip.js:
     > node Trip.js
     Please note that before you run Trip.js, you must input your own mapQuestKey:

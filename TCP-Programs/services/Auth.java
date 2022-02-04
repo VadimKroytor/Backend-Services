@@ -18,14 +18,13 @@ import g.Util;
 
 /**
  * Given a username and password, this service authenticates these credentials
- * and returns “OK” or “FAILURE” accordingly. This service will be used later by
- * the shopping cart application to authenticate users. Authentication is done
+ * and returns “OK” or “FAILURE” accordingly. Authentication is done
  * by adding a long salt to the password; using a cryptographic function to hash
  * the result; and then repeating the process count times. The CLIENT table in
  * the Sqlite3 database stores the salt, count, and hash of each user. The table
  * adopts PBKDF2 (Password-Based Key Derivation Function 2) to perform the hash,
  * which is the current best practice. An API for computing PBKDF2 is provided
- * in the hr4413 library (in 4413/lib) through the following method in the
+ * in the library (in resources_and_libraries/lib) through the following method in the
  * g.Util class:
  *
  * public static String hash(String password, String salt, int count) throws
