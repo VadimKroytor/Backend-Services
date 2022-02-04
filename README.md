@@ -62,5 +62,5 @@ CREATE TABLE Tax (
 );
 
 
--> The following github repo was used as a reference to implement all of these services. 
+-> The following github repo was used as a reference to implement these services. 
 https://github.com/EECS4413-2021F
